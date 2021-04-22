@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="carpma_ıslemi">ÇARPMA İŞLEMİ</string>
+    <string name="hello_blank_fragment">Boş fragment</string>
+    <string name="toplama">TOPLAMA İŞLEMİ</string>
+    <string name="anasayfayazi">Yapmak istediğiniz matematik işlemini seçiniz</string>
+    <string name="app_name">Hesapla</string>
+    <string name="button_name">SUM</string>
+    <string name="hint_value">Bir sayı giriniz</string>
+</resources>

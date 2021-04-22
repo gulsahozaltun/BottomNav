@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.bottomnav.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" />
+    <fragment
+        android:id="@+id/toplamaFragment"
+        android:name="com.example.bottomnav.ToplamaFragment"
+        android:label="fragment_cikarma"
+        tools:layout="@layout/fragment_cikarma" >
+        <action
+            android:id="@+id/action_toplamaFragment_to_sonucToplaFragment"
+            app:destination="@id/sonucToplaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cikarmaFragment"
+        android:name="com.example.bottomnav.CikarmaFragment"
+        android:label="CikarmaFragment"
+        tools:layout="@layout/fragment_anasayfa">
+        <action
+            android:id="@+id/action_cikarmaFragment_to_sonucCarpmaFragment"
+            app:destination="@id/sonucCarpmaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sonucToplaFragment"
+        android:name="com.example.bottomnav.SonucToplaFragment"
+        android:label="fragment_sonuc_topla"
+        tools:layout="@layout/fragment_sonuc_topla" >
+        <argument
+            android:name="toplamSonuc"
+            app:argType="string"
+            android:defaultValue="deger yok" />
+    </fragment>
+    <fragment
+        android:id="@+id/sonucCarpmaFragment"
+        android:name="com.example.bottomnav.SonucCarpmaFragment"
+        android:label="fragment_sonuc_carpma"
+        tools:layout="@layout/fragment_sonuc_carpma" >
+
+        <argument
+            android:name="carpimSonuc"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="carpma_ıslemi">Multiplication</string>
+    <string name="toplama">Addition</string>
+    <string name="anasayfayazi">Select the math operation you want to do</string>
+    <string name="button_name">MULTIPLY</string>
+    <string name="hint_value">Enter a number</string>
+
+
+</resources>
